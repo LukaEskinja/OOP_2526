@@ -5,6 +5,8 @@ public class AppTest {
         Student s1 = new Student("Luka", "Eskinja", 13);
         Student s2 = new Student("John", "Snow", 14);
 
+
+
         s1.subscribeToStudentService();
         s2.subscribeToStudentService();
 
@@ -18,5 +20,7 @@ public class AppTest {
 
         System.out.println(h1);
         System.out.println(h2);
+
+
     }
 }
