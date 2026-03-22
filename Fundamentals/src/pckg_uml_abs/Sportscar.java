@@ -1,7 +1,7 @@
 package pckg_uml_abs;
 
 public class Sportscar extends VehCommon{
-
+    //ok
     protected Driver driver;
 
     public Sportscar(String brand, String model, Driver driver) {
