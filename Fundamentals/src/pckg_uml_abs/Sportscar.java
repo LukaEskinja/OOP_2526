@@ -1,39 +1,30 @@
 package pckg_uml_abs;
 
-public class Sportscar implements Veh{
+public class Sportscar extends VehCommon{
 
-    private static int cntID = 20;
+    protected Driver driver;
 
-    private int id;
-
-    private String name;
-
-    private String model;
-
-    public Sportscar(String brand,String model){
-        this.id = cntID++;
-        this.name = brand;
-        this.model = model;
-
+    public Sportscar(String brand, String model, Driver driver) {
+        super(brand, model);
+    }
+    @Override
+    protected void changeTires() {
+        System.out.println("SportsCar changing 4 tires..."+ this.getClass().getSimpleName());
 
     }
 
     @Override
     public void startVeh() {
-        System.out.println("Starting in specific car way:" + this.getClass().getSimpleName()+ "- " + this.id);
+
+        System.out.println("SportsCar starting...:" + this.getClass().getSimpleName() + "- " + this.id);
+
     }
 
     @Override
     public void stopVeh() {
-        System.out.println("Stopping in specific car way:" + this.getClass().getSimpleName()+ "- " + this.id);
 
-    }
+        System.out.println("SportsCar stopping..."+ this.getClass().getSimpleName()+"- "+this.id);
 
-    @Override
-    public String toString() {
-        return "Sportscar{" +
-                "id=" + id +
-                '}';
     }
 
     @Override
@@ -42,3 +33,4 @@ public class Sportscar implements Veh{
 
     }
 }
+
