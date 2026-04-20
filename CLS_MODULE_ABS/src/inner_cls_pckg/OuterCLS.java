@@ -1,5 +1,7 @@
 package inner_cls_pckg;
 
+import java.util.ArrayList;
+
 public class OuterCLS {
 
     private int id;
@@ -10,6 +12,8 @@ public class OuterCLS {
 
     private static final String OUTERNME = "Name for the outer cls!";
 
+    private static ArrayList<OuterCLS>  outLst;
+
     public OuterCLS(){
         System.out.println("Creating an object of the outer CLS!");
     }
@@ -17,6 +21,15 @@ public class OuterCLS {
     public OuterCLS(String nameIT){
         this.nameIT = nameIT;
         this.id = cntID++;
+        this.outLst = new ArrayList<>();
+    }
+
+    static class StaticInnerCls{
+
+        static void addElement2List(OuterCLS oe){
+            outLst.add(oe);
+
+        }
     }
 
     class InnerCLS{

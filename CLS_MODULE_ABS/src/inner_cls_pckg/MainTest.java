@@ -1,5 +1,7 @@
 package inner_cls_pckg;
 
+import java.util.ArrayList;
+
 public class MainTest {
 
     public static void main(String[] args) {
@@ -9,6 +11,17 @@ public class MainTest {
         inner1.InnerInfo();
         OuterCLS.InnerCLS inner2 = outer1.createInnerClsObject("Ime druge unutarnje!");
         inner2.InnerInfo();
+        ArrayList<Integer> intList = new ArrayList<>();
+        intList.add(10);
+        intList.add(21);
+        intList.add(22);
+        listElements(intList);
 
+    }
+
+    private static void listElements(ArrayList <Integer> elements){
+        for(Integer el : elements){
+            System.out.println(el);
+        }
     }
 }
