@@ -43,8 +43,10 @@ public class Student extends OsobaSaFakulteta implements MogucaIdentifikacija,Mo
 
     @Override
     public int compareTo(Student drugi) {
-        return this.JMBAG.compareTo(drugi.JMBAG);
+        return this.studij.compareTo(drugi.studij);
     }
+
+    // return Integer.compare(....,....)
 
 //    provjera ima li vec taj student
     @Override

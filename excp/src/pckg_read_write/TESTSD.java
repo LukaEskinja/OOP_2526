@@ -15,7 +15,6 @@ public class TESTSD {
         listElements(spaceShipList);
         String filePath = "./EXCP/src/pckg_read_write/spaceShipData_1.bin";
         AUX_SER_DESER.saveShips(spaceShipList, filePath);
-        print()
     }
 
         private static <E> void listElements(List<E> lista){

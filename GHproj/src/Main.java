@@ -46,7 +46,8 @@ public class Main {
 
 
         CitacPodataka cp1 = new CitacPodataka();
-        cp1.ucitajStudente("DATA/studenti.txt", se1);
+        cp1.ucitajStudente("C:/Users/Luka/Documents/SIT/Semestar2/Oop/Predavanje3/OOP_2526/GHproj/DATA/studenti.txt", se1);
+        System.out.println("Ucitano studenata: " + se1.brojStudenata());
         cp1.ucitajOcjene("DATA/ocjene.txt", se1);
 
         System.out.println("=== STUDENTI PO JMBAG-U (iz datoteke i rucno)===");
@@ -61,8 +62,8 @@ public class Main {
         }
 
         Comparator<Student> poProsijeku = (stu1,stu2) -> {
-            double p1 = se1.dajStatistiku(st1).prosjekOcjena();
-            double p2 = se1.dajStatistiku(st2).prosjekOcjena();
+            double p1 = se1.dajStatistiku(stu1).prosjekOcjena();
+            double p2 = se1.dajStatistiku(stu2).prosjekOcjena();
             return Double.compare(p2,p1);
         };
 
@@ -91,5 +92,8 @@ public class Main {
         for (Student s : informaticari) {
             System.out.println(s.generirajIzvjestaj());
         }
+
+        System.out.println("Working dir: " + System.getProperty("user.dir"));
     }
+
 }

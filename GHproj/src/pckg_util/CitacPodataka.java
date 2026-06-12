@@ -30,7 +30,7 @@ public class CitacPodataka {
 
                 int godinaUpisa;
 
-                String email = dijelovi[5];
+                String email = dijelovi[5].trim();
 
                 try{
                     godinaUpisa = Integer.parseInt(dijelovi[4].trim());
@@ -100,7 +100,7 @@ public class CitacPodataka {
                 String kategorija = dijelovi[3].trim();
                 int ECTS;
                 int ocjena;
-                String semestar = dijelovi[5];
+                String semestar = dijelovi[5].trim();
 
                 try {
                     ECTS = Integer.parseInt(dijelovi[2].trim());

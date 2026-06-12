@@ -15,6 +15,8 @@ public class MainFrame extends JFrame implements ToolBarListener {
 
     private ToolBar toolBar;
 
+    private AppMenuBar menubar;
+
     public MainFrame(){
         super("Simple Gui app!");
         initFrame();
@@ -38,6 +40,8 @@ public class MainFrame extends JFrame implements ToolBarListener {
         jButton = new JButton("Submit");
         textAreaScroll = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         toolBar = new ToolBar();
+        menubar = new AppMenuBar();
+        setJMenuBar(menubar);
     }
 
     private void layoutComps(){
@@ -49,7 +53,7 @@ public class MainFrame extends JFrame implements ToolBarListener {
 
     private void activateFrame(){
 
-        jButton.addActionListener(new ActionListener() {  //aaaaaaaaaaa////aaaaaaa7////
+        jButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 String line = ae.toString() + ae.paramString() + Integer.toHexString(ae.hashCode()) + "\n";

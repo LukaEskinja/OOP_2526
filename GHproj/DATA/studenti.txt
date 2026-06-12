@@ -1,0 +1,15 @@
+0036500115;Ana;Anić;Informatika;2022;mail
+0036500023;Ivan;Ivić;Informatika;2021;mail
+0036500308;Petra;Perić;Matematika;2022;mail
+0036500077;Marko;Marković;Informatika;2023;mail
+0036500201;Ema;Emić;Matematika;2023;mail
+0036500142;Luka;Lukić;Informatika;2021;mail
+0036500188;Mia;Matić;Matematika;2022;mail
+0036500264;Filip;Filipović;Informatika;2020;mail
+0036500319;Sara;Sarić;Matematika;2023;mail
+0036500045;David;Dadić;Informatika;2022;mail
+0036500227;Nika;Nikolić;Matematika;2021;mail
+0036500109;Tin;Tomić;Informatika;2023;mail
+0036500286;Iva;Ivić;Matematika;2020;mail
+0036500163;Karlo;Karlović;Informatika;2022;mail
+0036500341;Lea;Lovrić;Matematika;2023;mail

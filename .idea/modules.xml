@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/course/course.iml" filepath="$PROJECT_DIR$/course/course.iml" />
       <module fileurl="file://$PROJECT_DIR$/excp/excp.iml" filepath="$PROJECT_DIR$/excp/excp.iml" />
       <module fileurl="file://$PROJECT_DIR$/poli/poli.iml" filepath="$PROJECT_DIR$/poli/poli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vjezba6/vjezba6.iml" filepath="$PROJECT_DIR$/vjezba6/vjezba6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vjezba7/vjezba7.iml" filepath="$PROJECT_DIR$/vjezba7/vjezba7.iml" />
       <module fileurl="file://$PROJECT_DIR$/vjezbe_aps/vjezbe_aps.iml" filepath="$PROJECT_DIR$/vjezbe_aps/vjezbe_aps.iml" />
       <module fileurl="file://$PROJECT_DIR$/vjzb27_4/vjzb27_4.iml" filepath="$PROJECT_DIR$/vjzb27_4/vjzb27_4.iml" />
     </modules>
